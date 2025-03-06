@@ -1,8 +1,9 @@
 import streamlit as st
 
-st.title("🛠️ Unit Converter App")
+st.title("Fast & Accurate Unit Converter 🔄  ")
 st.markdown(" ### Convert Length, Weight And Time Instantly ")
-st.write("Welcome! Select a category, enter a value and get converted result in real-time")
+st.write("Welcome! Select a category, enter a value and get converted result in real-time, ")
+
 
 category = st.selectbox("Choose a category", ["Length", "Weight", "Time", "Distance"])
 
@@ -56,6 +57,11 @@ value = st.number_input("Enter the value to convert")
 if st.button("Convert"):
     result = convert_units(category, value, unit)
     st.success(f"The result is {result:.2f}")
+
+
+
+st.write("🔹  Developed by [Wania Akram](https://github.com/waniaa00)  -  Convert with Ease! 🔹")
+
 
  
         
